@@ -37,7 +37,7 @@ void draw() {
   
   if ((userChoiseForMovementDetectorType == 1 || userChoiseForMovementDetectorType == 2) && didUserChooseMovementDetectorType == false) { 
     String[] args = {"TwoFrameTest"};
-    HandMovementDetector sa = new HandMovementDetector();
+    NonConventionalMovement sa = new NonConventionalMovement();
     PApplet.runSketch(args, sa);
     didUserChooseMovementDetectorType=true;    
   }
@@ -47,8 +47,7 @@ void draw() {
     image(background, x, 0);
     image(background, x+background.width, 0);
     x -= 1;
-    //supermanJumpHeight += 1;
-    //y += supermanJumpHeight;
+
     if(x == -1800) x = 0;
     for(int i = 0 ; i < 2; i++) {
       imageMode(CENTER);
@@ -107,12 +106,12 @@ void mousePressed() {
   }
 }
 
-public class HandMovementDetector extends PApplet {
+public class NonConventionalMovement extends PApplet {
 
   Capture video;
   OpenCV opencv;
   
-  boolean handDetectionPositive = false;  
+  boolean DetectionPositive = false;  
 
   public void settings() {
     size(640, 480);
