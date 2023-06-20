@@ -24,8 +24,8 @@ Welcome to Suppy Man, a revised version of the popular arcade game Flappy Bird w
 
 SuppyMan introduces non-conventional interaction techniques for controlling Superman's movement:
 
-- __Head Movement__: Tilt your head left or right to move Superman in the respective direction.
-- __Fist Movement__: Make a fist with your hand to make Superman fly upwards.
+- __Head Movement__: Move your head forward or backward and control Superman's movement.
+- __Fist Movement__: Make a fist with your hand and control Superman's movement.
 
 Experiment with these new controls and navigate Superman through the obstacles to achieve a high score!
 ## Installation
